@@ -6,9 +6,78 @@
 body 
     font-family: 'Alata', sans-serif
 
+a 
+    text-decoration: none
+
 .attribution
     font-size: 11px
     text-align: center
 
     a 
         color: hsl(228, 45%, 44%)
+
+.nav-top
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    padding: 3rem 0
+    // background: red
+    z-index: 10
+
+    .nav-container 
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .nav-logo 
+            color: $cWhite
+            font-size: $font-xl
+            text-decoration: none
+            font-weight: 600
+
+        .nav-links
+            display: flex
+            justify-content: space-between
+            width: 25%
+            list-style: none
+
+            a 
+                color: $cWhite
+
+.container 
+    // position: relative
+    max-width: 80%
+    margin: auto
+
+.header 
+    position: relative
+    height: 80vh
+    background: url(../images/desktop/image-hero.jpg)
+    background-size: cover
+    background-position: center
+
+    .cover 
+        background: $cBlack
+        position: absolute
+        opacity: 0.4
+        top: 0
+        left: 0
+        right: 0
+        height: 100%
+        z-index: 1
+
+    h1
+        position: absolute
+        top: 50%
+        font-family: 'Josefin Sans', sans-serif
+        transform: translateY(-50%)
+        padding: 2.5rem 4rem
+        font-size: 80px
+        letter-spacing: 12px
+        font-weight: 200
+        // line-height: 6rem
+        text-transform: uppercase
+        color: $cWhite
+        border: 1px solid #fff
+        z-index: 2
