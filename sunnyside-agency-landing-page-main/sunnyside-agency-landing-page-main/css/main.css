@@ -107,6 +107,21 @@ a {
   transform: translateX(-50%);
 }
 
+section .flex-section {
+  display: flex;
+  align-items: center;
+}
+section .flex-section .container-1, section .flex-section .container-2 {
+  width: 50%;
+  height: 590px;
+}
+section .flex-section .container-2 {
+  position: relative;
+  background: url(../images/desktop/image-transform.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .con {
   height: 100vh;
 }
