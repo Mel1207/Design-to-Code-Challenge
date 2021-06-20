@@ -5,6 +5,7 @@
 
 body 
     background: #FFFBF8
+    position: relative
 
 a 
     text-decoration: none
@@ -17,6 +18,7 @@ a
     left: 0
     right: 0
     height: 10vh
+    z-index: 10
 
     .navbar-container 
         height: 100%
@@ -34,17 +36,20 @@ a
         .navbar-items
             list-style: none
             display: flex
-            width: 25em
             justify-content: space-between
             align-items: center
 
-            .navbar-link 
-                color: #fff
+            li 
+                margin: 0 15px
+
+                .navbar-link 
+                    color: #fff
 
         
             .btn-contact
                 padding: 15px 30px
                 background: #fff
+                font-weight: 600
                 color: #24303E
                 border-radius: 50px
                 transition: 0.3s ease
@@ -52,6 +57,41 @@ a
                 &:hover
                     background: rgba(#fff, .5)
                     color: #fff
+
+.header 
+    height: 100vh
+    position: relative
+    background: url(../images/desktop/image-header.jpg)
+    background-attachment: fixed
+    background-size: cover
+    background-position: center
+    width: 100%
+
+    .header-container 
+        position: absolute
+        width: max-content
+        top: 35%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+        h1
+            font-size: 100px
+            color: #fff
+            position: relative
+            padding-bottom: 80px
+
+            &::after
+                content: ""
+                display: block
+                background: url(../images/icon-arrow-down.svg)
+                height: 100%
+                width: 50px
+                background-position: center
+                background-repeat: no-repeat
+                position: absolute
+                left: 50%
+                bottom: -170px
+                transform: translateX(-50%)
 
 .con 
     height: 100vh
