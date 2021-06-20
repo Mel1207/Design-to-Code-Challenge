@@ -111,15 +111,27 @@ section .flex-section {
   display: flex;
   align-items: center;
 }
-section .flex-section .container-1, section .flex-section .container-2 {
+section .flex-section .flex-container {
   width: 50%;
   height: 590px;
 }
-section .flex-section .container-2 {
+section .flex-section .container-bg {
   position: relative;
-  background: url(../images/desktop/image-transform.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+section .flex-section .bg-1 {
+  background: url(../images/desktop/image-transform.jpg);
+}
+section .flex-section .bg-2 {
+  background: url(../images/desktop/image-stand-out.jpg);
+}
+section .flex-section .bg-3 {
+  background: url(../images/desktop/image-graphic-design.jpg);
+}
+section .flex-section .bg-4 {
+  background: url(../images/desktop/image-photography.jpg);
 }
 
 .con {
