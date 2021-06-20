@@ -97,29 +97,28 @@ section
     .flex-section 
         display: flex
         align-items: center
-        
-
-        .flex-container
-            width: 50%
-            height: 590px
-
-        .container-bg
-            position: relative
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
 
         .bg-1 
             background: url(../images/desktop/image-transform.jpg)
-        
+
         .bg-2 
             background: url(../images/desktop/image-stand-out.jpg)
 
         .bg-3 
             background: url(../images/desktop/image-graphic-design.jpg)
+            background-position-y: 0 !important
 
         .bg-4
             background: url(../images/desktop/image-photography.jpg)
+            background-position-y: 0 !important
+
+        .flex-container
+            width: 50%
+            height: 600px
+            background-size: cover !important
+            background-position: center
+            // background-attachment: fixed !important
+            // background-repeat: no-repeat
 
 .con 
     height: 100vh

@@ -111,16 +111,6 @@ section .flex-section {
   display: flex;
   align-items: center;
 }
-section .flex-section .flex-container {
-  width: 50%;
-  height: 590px;
-}
-section .flex-section .container-bg {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 section .flex-section .bg-1 {
   background: url(../images/desktop/image-transform.jpg);
 }
@@ -129,9 +119,17 @@ section .flex-section .bg-2 {
 }
 section .flex-section .bg-3 {
   background: url(../images/desktop/image-graphic-design.jpg);
+  background-position-y: 0 !important;
 }
 section .flex-section .bg-4 {
   background: url(../images/desktop/image-photography.jpg);
+  background-position-y: 0 !important;
+}
+section .flex-section .flex-container {
+  width: 50%;
+  height: 600px;
+  background-size: cover !important;
+  background-position: center;
 }
 
 .con {
