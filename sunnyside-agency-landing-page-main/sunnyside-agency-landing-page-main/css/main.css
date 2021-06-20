@@ -150,6 +150,12 @@ a {
   font-size: 25px;
   color: #7A7885;
 }
+.section-testimonials .container .client-container .client-name {
+  margin: 50px 0 15px 0;
+  font-size: 25px;
+  color: #24303E;
+  text-align: center;
+}
 .section-testimonials .section-title {
   font-size: 25px;
   text-transform: uppercase;
