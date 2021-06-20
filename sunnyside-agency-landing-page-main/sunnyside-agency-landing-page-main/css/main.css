@@ -1,9 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.primary-font {
+  font-family: "Barlow", sans-serif;
+}
+
+.secondary-font {
+  font-family: "Fraunces", serif;
+}
+
 *, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: #FFFBF8;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  background: #3DBEFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+}
+.navbar .navbar-container {
+  height: 100%;
+  display: flex;
+  width: 95%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navbar-container .navbar-logo {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 800;
+}
+.navbar .navbar-container .navbar-items {
+  list-style: none;
+  display: flex;
+  width: 25em;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar-container .navbar-items .navbar-link {
+  color: #fff;
+}
+.navbar .navbar-container .navbar-items .btn-contact {
+  padding: 15px 30px;
+  background: #fff;
+  color: #24303E;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.navbar .navbar-container .navbar-items .btn-contact:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.con {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */
