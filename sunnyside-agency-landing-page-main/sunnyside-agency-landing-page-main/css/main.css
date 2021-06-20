@@ -127,13 +127,24 @@ section .flex-section .bg-4 {
 }
 section .flex-section .flex-container {
   width: 50%;
-  height: 600px;
+  height: 700px;
   background-size: cover !important;
   background-position: center;
 }
 
 .con {
   height: 100vh;
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    background: red;
+  }
+}
+@media screen and (max-width: 780px) {
+  .header .header-container h1 {
+    font-size: 70px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
