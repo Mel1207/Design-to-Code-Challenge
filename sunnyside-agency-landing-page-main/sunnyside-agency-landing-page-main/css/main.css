@@ -52,9 +52,10 @@ a {
   align-items: center;
 }
 .navbar .navbar-container .navbar-items li {
-  margin: 0 15px;
+  margin: 0 25px;
 }
 .navbar .navbar-container .navbar-items li .navbar-link {
+  font-weight: 600;
   color: #fff;
 }
 .navbar .navbar-container .navbar-items .btn-contact {
@@ -215,10 +216,24 @@ a {
   list-style: none;
 }
 .section-footer .footer-nav-items li {
-  margin: 0 20px;
+  margin: 0 25px;
 }
 .section-footer .footer-nav-items li .footer-link {
+  font-weight: 600;
   color: #2B7264;
+  transition: 0.3s ease;
+}
+.section-footer .footer-nav-items li .footer-link:hover {
+  color: #fff;
+}
+.section-footer .footer-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.section-footer .footer-icon-list li {
+  margin: 0 10px;
 }
 
 @media screen and (max-width: 1080px) {
