@@ -208,7 +208,7 @@ a {
   font-weight: 800;
 }
 .section-footer .footer-nav-items {
-  margin: 30px 0 80px 0;
+  margin: 30px 0 60px 0;
   display: block;
   display: flex;
   justify-content: center;
@@ -234,6 +234,27 @@ a {
 }
 .section-footer .footer-icon-list li {
   margin: 0 10px;
+}
+.section-footer .footer-icon-list li .icon-link-container {
+  position: relative;
+  height: 20px;
+  width: 20px;
+}
+.section-footer .footer-icon-list li .icon-link-container .non-hover {
+  transition: 0.3s ease;
+  display: block;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+}
+.section-footer .footer-icon-list li .icon-link-container .hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.section-footer .footer-icon-list li .icon-link-container:hover .non-hover {
+  opacity: 0 !important;
 }
 
 @media screen and (max-width: 1080px) {

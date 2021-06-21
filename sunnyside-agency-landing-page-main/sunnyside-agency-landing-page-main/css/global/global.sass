@@ -199,7 +199,7 @@ a
         font-weight: 800
 
     .footer-nav-items 
-        margin: 30px 0 80px 0
+        margin: 30px 0 60px 0
         display: block
         display: flex
         justify-content: center
@@ -227,3 +227,26 @@ a
 
         li 
             margin: 0 10px
+
+            .icon-link-container
+                position: relative
+                height: 20px
+                width: 20px
+                
+                .non-hover 
+                    transition: 0.3s ease
+                    display: block
+                    z-index: 10
+                    height: 100%
+                    width: 100%
+
+                .hover 
+                    position: absolute
+                    left: 0
+                    top: 0
+                    z-index: 0
+
+
+                &:hover
+                    .non-hover
+                        opacity: 0 !important
