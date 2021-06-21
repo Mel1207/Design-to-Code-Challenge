@@ -175,8 +175,15 @@ a {
   margin-bottom: 30px;
 }
 
-.con {
-  height: 100vh;
+.section-gallery {
+  display: flex;
+  align-items: center;
+}
+.section-gallery .col.gallery-img-container {
+  width: 25%;
+}
+.section-gallery .col.gallery-img-container img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1080px) {
