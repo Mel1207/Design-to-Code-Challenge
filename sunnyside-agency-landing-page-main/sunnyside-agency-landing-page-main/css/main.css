@@ -176,14 +176,26 @@ a {
 }
 
 .section-gallery {
+  position: relative;
+  display: block;
+  width: 100%;
   display: flex;
-  align-items: center;
 }
 .section-gallery .col.gallery-img-container {
   width: 25%;
+  overflow: hidden;
 }
 .section-gallery .col.gallery-img-container img {
   width: 100%;
+  height: 100%;
+}
+.section-gallery .col.gallery-img-container .desktop-gallery {
+  display: block;
+}
+
+.section-footer {
+  padding: 5vh 0;
+  background: #90D4C5;
 }
 
 @media screen and (max-width: 1080px) {
