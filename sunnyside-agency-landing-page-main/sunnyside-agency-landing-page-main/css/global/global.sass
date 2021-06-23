@@ -143,8 +143,6 @@ a
                 position: relative
                 z-index: 1
 
-            
-            a.color-1 
                 &::before
                     content: ""
                     position: absolute
@@ -152,16 +150,23 @@ a
                     height: 10px
                     width: 0
                     transition: 0.3s ease
-                    background: red
                     border-radius: 5px
-                    bottom: 2px
+                    bottom: 1px
                     left: 50%
                     transform: translateX(-50%)
 
-            a.color-1
+            
                 &:hover
                     &::before
-                        width: 105%
+                        width: 108%
+
+            a.color-1 
+                &::before
+                    background: #FBD201
+
+            a.color-2 
+                &::before
+                    background: #FA6F5F
 
             
                 

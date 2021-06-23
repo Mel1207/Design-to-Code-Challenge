@@ -153,21 +153,26 @@ a {
   position: relative;
   z-index: 1;
 }
-.section-feature .flex-section .container-message a.color-1::before {
+.section-feature .flex-section .container-message a.btn-link::before {
   content: "";
   position: absolute;
   z-index: -1;
   height: 10px;
   width: 0;
   transition: 0.3s ease;
-  background: red;
   border-radius: 5px;
-  bottom: 2px;
+  bottom: 1px;
   left: 50%;
   transform: translateX(-50%);
 }
-.section-feature .flex-section .container-message a.color-1:hover::before {
-  width: 105%;
+.section-feature .flex-section .container-message a.btn-link:hover::before {
+  width: 108%;
+}
+.section-feature .flex-section .container-message a.color-1::before {
+  background: #FBD201;
+}
+.section-feature .flex-section .container-message a.color-2::before {
+  background: #FA6F5F;
 }
 
 .section-testimonials {
