@@ -121,7 +121,11 @@ a
             // background-repeat: no-repeat
 
         .container-message
-            padding: 8%
+            padding: 0 8%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            // align-items: center
             // margin: 10%
 
             .message-title 
@@ -135,13 +139,16 @@ a
                 line-height: 1.5em
                 margin-bottom: 30px
 
+            // HOVER EFFECTS
             a.btn-link 
                 text-transform: uppercase
                 font-size: 25px
                 color: #24303E
-                font-weight: 600
+                font-weight: 700
                 position: relative
+                letter-spacing: 1px
                 z-index: 1
+                width: max-content
 
                 &::before
                     content: ""
@@ -171,7 +178,7 @@ a
             
                 
                 
-
+// 
 .section-testimonials
     padding: 15vh 0
 
