@@ -46,6 +46,15 @@ a {
   color: #fff;
   font-weight: 800;
 }
+.navbar .navbar-container .navbar-menu {
+  cursor: pointer;
+}
+.navbar .navbar-container .navbar-menu div {
+  height: 2px;
+  width: 45px;
+  background: #fff;
+  margin: 7px 0;
+}
 .navbar .navbar-container .navbar-items {
   list-style: none;
   display: flex;
@@ -330,6 +339,11 @@ a {
 @media screen and (max-width: 1080px) {
   body {
     background: red;
+  }
+}
+@media screen and (max-width: 780px) {
+  .navbar-items {
+    display: none !important;
   }
 }
 
