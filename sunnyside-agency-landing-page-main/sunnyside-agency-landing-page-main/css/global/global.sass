@@ -34,26 +34,34 @@ a
             font-weight: 800
 
         .navbar-menu 
-            width: 50px
             cursor: pointer
+            padding: 10px
             display: none
-            transition: 0.3s 
-
-            div
-                height: 2px 
-                width: 100%
-                background: #fff
-                margin: 7px 0
+    
+            .menu-lines
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                height: 25px
                 transition: 0.3s
+                width: 45px
+                transition: 0.3s 
+                position: relative
+
+                div
+                    height: 2px 
+                    width: 100%
+                    background: #fff
+                    transition: 0.3s
 
             &:hover
+                .menu-lines
+                    height: 15px
+
                 .line-2
                     width: 0
                     opacity: 0
-                   
-                div 
-                    margin: 3px 0 !important  
-                
+
         .navbar-items
             list-style: none
             display: flex
@@ -87,6 +95,7 @@ a
     background-size: cover
     background-position: center
     width: 100%
+    overflow: hidden
 
     .header-container 
         position: absolute
