@@ -36,12 +36,23 @@ a
         .navbar-menu 
             cursor: pointer
             // display: none
+            transition: 0.3s 
+
             div
-                height: 2px 
-                width: 45px
+                height: 3px 
+                width: 50px
                 background: #fff
                 margin: 7px 0
+                transition: 0.3s
 
+            &:hover
+                .line-2
+                    width: 0
+                    opacity: 0
+                   
+                div 
+                    margin: 3px 0 !important  
+                
         .navbar-items
             list-style: none
             display: flex

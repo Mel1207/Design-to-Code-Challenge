@@ -48,12 +48,21 @@ a {
 }
 .navbar .navbar-container .navbar-menu {
   cursor: pointer;
+  transition: 0.3s;
 }
 .navbar .navbar-container .navbar-menu div {
-  height: 2px;
-  width: 45px;
+  height: 3px;
+  width: 50px;
   background: #fff;
   margin: 7px 0;
+  transition: 0.3s;
+}
+.navbar .navbar-container .navbar-menu:hover .line-2 {
+  width: 0;
+  opacity: 0;
+}
+.navbar .navbar-container .navbar-menu:hover div {
+  margin: 3px 0 !important;
 }
 .navbar .navbar-container .navbar-items {
   list-style: none;
