@@ -175,6 +175,13 @@ a {
   color: #24303E;
   margin-bottom: 30px;
 }
+.section-feature .flex-section .container-message .message-title-mobile {
+  display: none;
+  text-align: center;
+  font-size: 40px;
+  color: #24303E;
+  margin-bottom: 30px;
+}
 .section-feature .flex-section .container-message .message-text {
   font-size: 25px;
   color: #A7A7A7;
@@ -404,6 +411,24 @@ a {
 @media screen and (max-width: 480px) {
   .header .header-container h1 {
     font-size: 60px;
+  }
+
+  .message-title {
+    display: none;
+  }
+
+  .message-title-mobile {
+    display: block !important;
+  }
+
+  .message-text {
+    text-align: center;
+    font-size: 20px !important;
+  }
+
+  .btn-link {
+    margin: 0 auto;
+    font-size: 18px;
   }
 }
 
