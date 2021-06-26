@@ -367,6 +367,22 @@ a {
   opacity: 0 !important;
 }
 
+@media screen and (max-width: 1080px) {
+  .header .header-container h1 {
+    font-size: 65px;
+  }
+
+  .flex-end div {
+    width: 90% !important;
+  }
+  .flex-end div h3 {
+    font-size: 30px !important;
+    margin-bottom: 0.6em !important;
+  }
+  .flex-end div p {
+    font-size: 17px !important;
+  }
+}
 @media screen and (max-width: 780px) {
   .navbar-items {
     display: none !important;
