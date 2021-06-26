@@ -30,7 +30,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 10vh;
+  height: 80px;
   z-index: 10;
 }
 .navbar .navbar-container {
@@ -117,10 +117,13 @@ a {
   transform: translate(-50%, -50%);
 }
 .header .header-container h1 {
-  font-size: 100px;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 2px;
   color: #fff;
   position: relative;
   padding-bottom: 80px;
+  text-transform: uppercase;
 }
 .header .header-container h1::after {
   content: "";
@@ -157,6 +160,7 @@ a {
 .section-feature .flex-section .flex-container {
   width: 50%;
   height: 75vh;
+  min-height: 600px;
   background-size: cover !important;
   background-position: center;
 }
@@ -370,7 +374,7 @@ a {
     text-align: center;
   }
   .header .header-container h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .section-feature .reverse-1 {
@@ -399,7 +403,7 @@ a {
 }
 @media screen and (max-width: 480px) {
   .header .header-container h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
 }
 
