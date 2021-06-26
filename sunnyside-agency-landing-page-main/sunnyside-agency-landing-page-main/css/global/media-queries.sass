@@ -1,12 +1,51 @@
 @media screen and (max-width: 1080px) 
 
+    
+
+@media screen and (max-width: 780px) 
+
     .navbar-items 
         display: none !important
     
     .navbar-menu 
         display: block !important
 
+    .header 
+        .header-container
+            width: auto
+            text-align: center
 
-@media screen and (max-width: 780px) 
+            h1
+                font-size: 80px
+
+    .section-feature
+        .reverse-1 
+            flex-direction: column-reverse !important
+
+        .flex-section 
+            flex-direction: column
+
+            .flex-container
+                width: 100%
+
+            .bg-1 
+                align-self: flex-start
+
+    .section-testimonials
+        .container
+            flex-direction: column
+       
+
+
+    .section-gallery
+        flex-wrap: wrap
+
+        .col.gallery-img-container 
+            width: 50%
+
     
-    
+@media screen and (max-width: 480px) 
+    .header
+        .header-container
+            h1
+                font-size: 50px
