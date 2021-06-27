@@ -2,6 +2,7 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    scroll-behavior: smooth
 
 body 
     background: #FFFBF8
@@ -235,8 +236,7 @@ a
 
             .message-title-mobile
                 display: none
-                text-align: center
-                font-size: 40px
+                font-size: 45px
                 color: #24303E
                 margin-bottom: 30px
 
@@ -282,7 +282,7 @@ a
                     left: 50%
                     transform: translateX(-50%)
 
-                &:hover
+                &:hover, &:active, &:focus
                     &::after
                         width: 108%
 
