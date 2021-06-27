@@ -100,6 +100,7 @@ a {
 }
 
 .mobile-menu-container {
+  display: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -458,6 +459,10 @@ a {
   }
   .section-gallery .col.gallery-img-container {
     width: 50%;
+  }
+
+  .mobile-menu-container {
+    display: block !important;
   }
 }
 @media screen and (max-width: 480px) {
