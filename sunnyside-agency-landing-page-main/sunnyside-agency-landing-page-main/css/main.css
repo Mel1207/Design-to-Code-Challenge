@@ -111,6 +111,7 @@ a {
   z-index: 100;
   transition: 1s ease;
   padding: 60px 0;
+  box-shadow: 34px 35px 60px 14px rgba(0, 0, 0, 0.05);
 }
 .mobile-menu-container::before {
   content: "";
@@ -133,7 +134,7 @@ a {
 .mobile-menu-container .mobile-menu-list li a {
   font-weight: 600;
   font-size: 25px;
-  color: #A7A7A7;
+  color: #7A7885;
 }
 .mobile-menu-container .mobile-menu-list li .btn-contact-mobile {
   text-transform: uppercase;
@@ -145,7 +146,7 @@ a {
   transition: 0.3s ease;
 }
 .mobile-menu-container .mobile-menu-list li .btn-contact-mobile:hover {
-  background: rgba(251, 214, 1, 0.5);
+  background: rgba(251, 214, 1, 0.7);
 }
 
 .mobile-menu-show {
