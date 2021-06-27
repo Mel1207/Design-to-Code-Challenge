@@ -82,6 +82,7 @@ a {
 }
 .navbar .navbar-container .navbar-items li {
   margin: 0 25px;
+  transition: 0.3s;
 }
 .navbar .navbar-container .navbar-items li .navbar-link {
   font-weight: 600;
@@ -466,6 +467,10 @@ a {
   }
 }
 @media screen and (max-width: 1080px) {
+  .navbar .navbar-items li {
+    margin: 0 18px !important;
+  }
+
   .header .header-container h1 {
     font-size: 65px;
   }
