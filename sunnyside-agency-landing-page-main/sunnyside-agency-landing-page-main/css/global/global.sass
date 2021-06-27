@@ -150,7 +150,7 @@ a
         100%
             opacity: 1
             top: 130px
-            
+
 // --------------------------------------------------------------- SECTION HEADER --------------------------------------------------------------- //
 // --------------------------------------------------------------- SECTION HEADER --------------------------------------------------------------- //
 .header 
@@ -256,8 +256,21 @@ a
                 letter-spacing: 1px
                 z-index: 1
                 width: max-content
+                cursor: pointer
 
                 &::before
+                    content: ""
+                    position: absolute
+                    z-index: -2
+                    height: 10px
+                    width: 108%
+                    transition: 0.3s ease
+                    border-radius: 5px
+                    bottom: 1px
+                    left: 50%
+                    transform: translateX(-50%)
+
+                &::after
                     content: ""
                     position: absolute
                     z-index: -1
@@ -270,15 +283,21 @@ a
                     transform: translateX(-50%)
 
                 &:hover
-                    &::before
+                    &::after
                         width: 108%
 
             a.color-1 
                 &::before
+                    background: rgba(#FBD201, 0.3)
+                
+                &::after
                     background: #FBD201
 
             a.color-2 
                 &::before
+                    background: rgba(#FA6F5F, 0.3)
+
+                &::after
                     background: #FA6F5F
 
         .flex-end 
@@ -308,6 +327,11 @@ a
 // --------------------------------------------------------------- SECTION TESTIMONIALS --------------------------------------------------------------- //
 .section-testimonials
     padding: 15vh 0
+
+    .blocker
+        overflow: hidden
+        width: 360px
+        margin: auto
 
     .container
         width: 75%
@@ -360,6 +384,7 @@ a
     display: block
     width: 100%
     display: flex
+    overflow: hidden
 
     .col.gallery-img-container 
         width: 25%

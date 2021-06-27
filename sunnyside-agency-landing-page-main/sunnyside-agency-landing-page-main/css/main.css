@@ -261,8 +261,21 @@ a {
   letter-spacing: 1px;
   z-index: 1;
   width: max-content;
+  cursor: pointer;
 }
 .section-feature .flex-section .container-message a.btn-link::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  height: 10px;
+  width: 108%;
+  transition: 0.3s ease;
+  border-radius: 5px;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-feature .flex-section .container-message a.btn-link::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -274,13 +287,19 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
-.section-feature .flex-section .container-message a.btn-link:hover::before {
+.section-feature .flex-section .container-message a.btn-link:hover::after {
   width: 108%;
 }
 .section-feature .flex-section .container-message a.color-1::before {
+  background: rgba(251, 210, 1, 0.3);
+}
+.section-feature .flex-section .container-message a.color-1::after {
   background: #FBD201;
 }
 .section-feature .flex-section .container-message a.color-2::before {
+  background: rgba(250, 111, 95, 0.3);
+}
+.section-feature .flex-section .container-message a.color-2::after {
   background: #FA6F5F;
 }
 .section-feature .flex-section .flex-end {
@@ -308,6 +327,11 @@ a {
 
 .section-testimonials {
   padding: 15vh 0;
+}
+.section-testimonials .blocker {
+  overflow: hidden;
+  width: 360px;
+  margin: auto;
 }
 .section-testimonials .container {
   width: 75%;
@@ -357,6 +381,7 @@ a {
   display: block;
   width: 100%;
   display: flex;
+  overflow: hidden;
 }
 .section-gallery .col.gallery-img-container {
   width: 25%;
